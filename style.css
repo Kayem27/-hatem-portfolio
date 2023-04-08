@@ -41,6 +41,31 @@ footer {
   align-items: center;
   justify-content: space-between;
 }
+/* Mouse effet */
+
+.mouse {
+  position: absolute;
+  border-radius: 1500px;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+}
+/* #cursor {
+  background: #2128bd;
+  width: 14px;
+  height: 14px;
+}
+#mouse1 {
+  height: 100px;
+  width: 100px;
+  background: white;
+  transition: 0.15s ease-out;
+}
+#mouse2 {
+  height: 200px;
+  width: 200px;
+  background: rgb(41, 41, 41);
+  transition: 0.25s ease-out;
+} */
 
 /* Réseaux sociaux */
 .social {
@@ -683,14 +708,15 @@ footer span a:hover {
 }
 
 /* Custom css */
-.skill-box{
+.skill-box {
   padding: 1rem;
-  cursor: pointer;
+  /* cursor: pointer; */
+  gap: 30px;
 }
-.skill-title:hover .img{
+.skill-title:hover .img {
   transform: translateY(-10px);
 }
-.skill-title{
+.skill-title {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -698,36 +724,39 @@ footer span a:hover {
   padding: 0.5 rem;
   margin-bottom: 0.5rem;
 }
-.skill-title h3{
+.skill-title h3 {
   color: #fff;
   padding: 0.5rem;
 }
-.skill-title::after{
+.skill-title::after {
   content: "";
   position: absolute;
   bottom: 0;
-  width: 0;
+  width: 35px;
   right: 50%;
   height: 4px;
   border-radius: 2px 0 0 2px;
-  background-color: red;
+  background-color: #60f2d1;
   transition: 0.5s;
+  display: none;
 }
-.skill-title::before{
+.skill-title::before {
   content: "";
   position: absolute;
   bottom: 0;
-  width: 0;
+  width: 35px;
   left: 50%;
   height: 4px;
   border-radius: 0 2px 2px 0;
-  background-color: red;
+  background-color: #60f2d1;
   transition: 0.5s;
+  display: none;
 }
-.skill-title::after:hover{
-  width: 35px;
+.skill-title::after:hover {
+  display: block;
 }
-.img{
+
+.img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -738,7 +767,7 @@ footer span a:hover {
   background-color: #fff;
   transition: 0.5s;
 }
-.img:after{
+.img:after {
   content: "";
   position: absolute;
   top: 0;
@@ -748,6 +777,6 @@ footer span a:hover {
   background: rgba(100, 100, 100, 0.5);
   border-radius: 45px 0 0 45px;
 }
-.skill-icon{
+.skill-icon {
   width: 50px;
 }

@@ -38,6 +38,10 @@
 	
 </head>
 <body>
+	<!-- l'effet de la souris -->
+	<!-- <span class="mouse" id="cursor"></span>
+  <span class="mouse" id="mouse1"></span>
+  <span class="mouse" id="mouse2"></span> -->
 	<!-- **Réseaux sociaux** -->
 	<div class="social">
 		<a href="https://www.linkedin.com/in/hatem-abdoulatuf-677bab206/" target="_blank">Linkedin<i class="fa-brands fa-linkedin"></i></a>
@@ -186,6 +190,18 @@
 				</div>
 				<h3>Figma</h3>
 			</div>
+			<div class="skill-title">
+				<div class="img">
+					<img class="skill-icon" src="./img/skills/bootstrap.png" alt="Bootstrap">
+				</div>
+				<h3>Bootstrap</h3>
+			</div>
+			<div class="skill-title">
+				<div class="img">
+					<img class="skill-icon" src="./img/skills/firebase.png" alt="firebase">
+				</div>
+				<h3>Firebase</h3>
+			</div>
 		</div>
 		
 	</section>
@@ -320,33 +336,14 @@
 	<footer>
 		<span>Hatem ABDOULATUF| <span class="far fa-copyright"></span> 2023 Tous droits réservés</span>
 	</footer>
-	<!-- Script de traitement de mail -->
-	<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>	
+
 	<!-- Custom Javascript -->
 	<script src="./js/script.js"></script>
-	<script type="module">
-		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
-		import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-analytics.js";
-		
-		const firebaseConfig = {
-		  apiKey: process.env.apiKey,
-		  authDomain: "hatem-site-pro.firebaseapp.com",
-		  projectId: "hatem-site-pro",
-		  storageBucket: "hatem-site-pro.appspot.com",
-		  messagingSenderId: process.env.measurementId,
-		  appId: process.env.appId,
-		  measurementId: process.env.measurementId
-		};
-	  
-		// Initialize Firebase
-		const app = initializeApp(firebaseConfig);
-		const analytics = getAnalytics(app);
-	  </script>
 	  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	  <script>
 		AOS.init();
 	  </script>
-	  <script src="./js/contact.js"></script>
+	  <script src="./js/mouse.js"></script>
 </body>
 
 </html>
